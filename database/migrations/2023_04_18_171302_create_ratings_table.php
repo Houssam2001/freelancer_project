@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('ratings', function (Blueprint $table) {
             $table->id('rating_id');
             $table->double('rating');
-            $table->foreignId('user_id')
+            $table->foreignId('id')
             ->constrained() 
-            ->references('user_id')
+            ->references('id')
             ->on('users')
             ->onDelete('cascade');
             $table->foreignId('project_id')

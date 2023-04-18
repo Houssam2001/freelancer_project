@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id('project_id');
-            $table->foreignId('user_id')
+            $table->foreignId('id')
             ->constrained() 
-            ->references('user_id')
+            ->references('id')
             ->on('users')
             ->onDelete('cascade');
             $table->string('title',40);

@@ -21,22 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'role_id',
-        'first_name',
-        'last_name',
-        'status',
-        'score',
-        'profile_image', 
-    ];
-    protected $attributes = [
-        'first_name' => 'houssam',
-        'last_name' => 'machmech',
-        'status' => '4',
-        'score' => '30',
-        'profile_image' => 'hhddh.jpg',
-        'role_id' => '2',
-        
-
+        'role_id'
     ];
 
     /**
